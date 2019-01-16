@@ -1,2 +1,3 @@
 # workshop-01
-Just a workshop
+
+CSS workshop working with FlexBox
