@@ -1,3 +1,11 @@
 import React from 'react';
+import { Container } from './Main.styled';
+import { Item } from './Item';
 
-export const Main = ({ data }) => <div>Records count: {data.length}</div>;
+export const Main = ({ data }) => (
+  <Container>
+    {data.map(item => (
+      <Item key={item.id} {...item} />
+    ))}
+  </Container>
+);
