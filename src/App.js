@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Container } from './App.styled';
 import { GlobalStyles } from './global.styled';
+import { Main } from './Main';
+import { data } from './data';
 
 class App extends Component {
   render() {
@@ -8,7 +10,7 @@ class App extends Component {
       <>
         <GlobalStyles />
         <Container>
-          <div>Add your components here!</div>
+          <Main data={data} />
         </Container>
       </>
     );
